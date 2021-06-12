@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "regular";
+  src: url("../../assets/FiraCode-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "semi-bold";
+  src: url("../../assets/FiraCode-SemiBold.ttf") format("truetype");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "regular", sans-serif;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: semi-bold;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* font size utilities */
+
+h1 {
+  font-size: 1.71rem;
+}
+h2 {
+  font-size: 1.45rem;
+}
+h3 {
+  font-size: 1.15rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.86rem;
+}
+h6 {
+  font-size: 0.71rem;
+}
