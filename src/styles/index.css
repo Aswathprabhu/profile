@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "regular";
-  src: url("../../assets/FiraCode-Regular.ttf") format("truetype");
+  font-family: semi-bold;
+  src: url("../../assets/FiraCode-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "semi-bold";
-  src: url("../../assets/FiraCode-SemiBold.ttf") format("truetype");
+  font-family: bold;
+  src: url("../../assets/FiraCode-Bold.ttf") format("truetype");
 }
 
 html, body {
@@ -17,8 +17,12 @@ html, body {
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "regular", sans-serif;
+  font-family: semi-bold, sans-serif;
   font-size: 14px;
+}
+
+.wrapper {
+  animation: enter 0.6s;
 }
 
 h1,
@@ -27,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: semi-bold;
+  font-family: bold;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -51,4 +55,24 @@ h5 {
 }
 h6 {
   font-size: 0.71rem;
+}
+
+/* Colors */
+
+.border-t-green-200 {
+  border-top-color: #243b3b;
+}
+
+@keyframes enter {
+  0% {
+      -webkit-transform: scale(.97);
+      transform: scale(.97);
+      opacity: 0
+  }
+
+  to {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+  }
 }

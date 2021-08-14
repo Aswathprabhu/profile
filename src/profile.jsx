@@ -2,23 +2,29 @@ import { render } from 'preact';
 import Header from './header';
 import Main from './main';
 import Footer from './footer';
+import InvertedTriangle from './inverted-triangle';
 import './styles/index.css';
 
 function Profile() {
   return (
-    <div className="wrapper h-full">
-      <div className="flex flex-col m-auto py-8 w-3/5 h-full">
-        <header className="flex justify-between min-h-1/2">
-          <Header />
-        </header>
-        <main className="">
-          <Main />
-        </main>
-        <footer className="">
+    <main className="wrapper h-full">
+      <article className="flex flex-col h-full leading-8">
+        <section className="bg-green-200">
+          <div className="flex justify-between min-h-1/2 h-full m-auto pt-8 w-3/5">
+            <Header />
+          </div>
+        </section>
+        <InvertedTriangle className="border-t-green-200 absolute" />
+        <section className="bg-yellow-100">
+          <div className="flex justify-between min-h-1/2 h-full m-auto pt-8 w-3/5">
+            <Main />
+          </div>
+        </section>
+        <section className="bg-green-200">
           <Footer />
-        </footer>
-      </div>
-    </div>
+        </section>
+      </article>
+    </main>
   )
 }
 

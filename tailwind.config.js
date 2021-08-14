@@ -1,12 +1,18 @@
 module.exports = {
+  mode: 'jit',
   purge: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     fontFamily: {
-      regular: ['regular', 'sans-serif'],
-      'semi-bold': ['semi-bold', 'sans-serif']
+      'semi-bold': ['semi-bold', 'sans-serif'],
+      'bold': ['bold', 'sans-serif']
     },
     minHeight: {
       '1/2': '50%'
+    },
+    colors: {
+      'green-200': '#243b3b',
+      'yellow-100': '#fcd739',
+      'white': '#eff0f2'
     }
   },
   variants: {
