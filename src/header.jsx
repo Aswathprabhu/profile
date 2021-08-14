@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <section className="w-1/2 h-full text-white">
-        <section className="mb-6 uppercase ">
+        <section className="mb-6 uppercase">
           <h1 className="text-yellow-100">Aswath Prabhu R</h1>
           <span className="font-bold">Software Developer</span>
         </section>
@@ -16,7 +16,7 @@ export default function Header() {
             Passionate about efficiently developing and end-to-end testing web apps.
           </span>
         </section>
-        <section>
+        <section className="mb-6">
           <h2 className="uppercase mb-3 text-yellow-100">TL;DR,</h2>
           <ul className="list-disc ml-5">
             <li>Javascript aficionado</li>
