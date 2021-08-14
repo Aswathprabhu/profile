@@ -16,7 +16,7 @@ export default function Header() {
             Passionate about efficiently developing and end-to-end testing web apps.
           </span>
         </section>
-        <section className="mb-6">
+        <section>
           <h2 className="uppercase mb-3 text-yellow-100">TL;DR,</h2>
           <ul className="list-disc ml-5">
             <li>Javascript aficionado</li>

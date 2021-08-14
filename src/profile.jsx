@@ -10,7 +10,7 @@ function Profile() {
     <main className="wrapper h-full">
       <article className="flex flex-col h-full leading-8">
         <section className="bg-green-200">
-          <div className="flex justify-between min-h-1/2 h-full m-auto pt-8 w-3/5">
+          <div className="flex justify-between min-h-1/2 h-full m-auto pt-8 w-2/3">
             <Header />
           </div>
         </section>
