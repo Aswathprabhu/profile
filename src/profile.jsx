@@ -3,6 +3,7 @@ import Header from './header';
 import Main from './main';
 import Footer from './footer';
 import InvertedTriangle from './inverted-triangle';
+import styles from './styles/profile.module.css';
 import './styles/index.css';
 
 function Profile() {
@@ -10,13 +11,13 @@ function Profile() {
     <main className="wrapper h-full">
       <article className="flex flex-col h-full leading-8">
         <section className="bg-green-200">
-          <div className="flex justify-between min-h-1/2 h-full m-auto pt-8 w-2/3">
+          <div className={`${styles['section-setup']}`}>
             <Header />
           </div>
         </section>
         <InvertedTriangle className="border-t-green-200 absolute" />
         <section className="bg-yellow-100">
-          <div className="flex justify-between min-h-1/2 h-full m-auto pt-8 w-3/5">
+          <div className={`${styles['section-setup']}`}>
             <Main />
           </div>
         </section>
