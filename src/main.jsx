@@ -7,7 +7,7 @@ const WORK_GROUNDS = [
     achievements: [
       'Took care of Payment Gateways Integration module in Zoho Finance Suite',
       'Handled Client Integration of Stripe, Braintree, Razorpay, Square, forte, Authorize.Net and various gateways',
-      'Adopted a module based workflow, that removed all the duplication thereby increasing the clarity and made the low more predictable'
+      'Adopted a module based workflow, that removed all the duplication thereby increasing the clarity and made the code more predictable'
     ]
   },
   {
