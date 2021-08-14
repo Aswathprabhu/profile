@@ -11,7 +11,7 @@ function Profile() {
     <main className="wrapper h-full">
       <article className="flex flex-col h-full leading-8">
         <section className="bg-green-200">
-          <div className={`${styles['section-setup']}`}>
+          <div className={`${styles['section-setup']} -mb-8`}>
             <Header />
           </div>
         </section>
