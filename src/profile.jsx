@@ -15,14 +15,17 @@ function Profile() {
             <Header />
           </div>
         </section>
-        <InvertedTriangle className="border-t-green-200 absolute" />
+        <InvertedTriangle className="border-t-green-200" />
         <section className="bg-yellow-100">
           <div className={`${styles['section-setup']}`}>
             <Main />
           </div>
         </section>
-        <section className="bg-green-200">
-          <Footer />
+        <InvertedTriangle className="border-t-yellow-100" />
+        <section className="bg-green-100">
+          <div className={`${styles['section-setup']}`}>
+            <Footer />
+          </div>
         </section>
       </article>
     </main>

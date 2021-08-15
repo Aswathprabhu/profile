@@ -57,10 +57,18 @@ h6 {
   font-size: 0.71rem;
 }
 
-/* Colors */
+/* Borders */
 
 .border-t-green-200 {
   border-top-color: #243b3b;
+}
+
+.border-t-yellow-100 {
+  border-top-color: #fcd739;
+}
+
+.border-t-green-100 {
+  border-top-color: #179b9e;
 }
 
 @keyframes enter {
