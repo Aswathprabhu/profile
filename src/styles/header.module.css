@@ -1,0 +1,3 @@
+.contact-item {
+  @apply max-h-8 px-2 absolute text-white hover:text-black hover:bg-ghost-white hover:rounded transition-colors;
+}

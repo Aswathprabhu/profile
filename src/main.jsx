@@ -12,7 +12,7 @@ const WORK_GROUNDS = [
       'Maintaining a Design Language System built with Web Components',
       'Built UI components as Web Components to make them interoperable between various frameworks and libraries',
       'Built various light weight widgets using Preact JS',
-      'Made critical pages light weight by building them with Preact JS and rendered them within Iframes',
+      'Made critical pages light weight and rendered them within Iframes',
       'Efficiently handled cross-origin communication between the parent and child apps via message events',
       'Wrote various codemods and custom lint rules to enforce code styles',
       'Maintaining CI/CD for a Monorepo',

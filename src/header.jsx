@@ -1,9 +1,11 @@
 import ProfExp from './prof-exp';
+import Contact from './contact';
+import styles from './styles/header.module.css';
 
 export default function Header() {
   return (
-    <>
-      <section className="w-1/2 h-full text-white slide-in">
+    <div className="flex justify-between slide-in">
+      <section className="w-1/2 h-full text-white">
         <section className="mb-6 uppercase">
           <h1 className="text-yellow-100">Aswath Prabhu R</h1>
           <span className="font-bold">Software Developer</span>
@@ -30,13 +32,24 @@ export default function Header() {
           </ul>
         </section>
       </section>
-      <aside className="w-1/2 flex justify-end h-full">
+      <aside className="h-full">
         <img
           className="w-96 h-3/5 object-cover rounded-lg shadow-2xl profile-img"
           src="/profile.jpg"
           alt="Aswath Prabhu R"
         />
+        <div className="relative top-9">
+          <Contact type="phone" className={styles['contact-item']} />
+          <Contact type="mail" className={`${styles['contact-item']} top-9`} />
+          <Contact type="website" className={`${styles['contact-item']} top-18`} />
+        </div>
+        
+        {/* <Contact type="website" className="inline-block ml-3" /> */}
+        {/* <Contact type="linkedin" className="inline-block ml-3" />
+        <Contact type="stackoverflow" className="inline-block" />
+        <Contact type="github" className="inline-block ml-3" />
+        <Contact type="twitter" className="inline-block ml-3" /> */}
       </aside>
-    </>
+    </div>
   );
 }
