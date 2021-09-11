@@ -20,6 +20,9 @@ module.exports = {
     extend: {
       inset: {
         18: '4.5rem'
+      },
+      spacing: {
+        112: '28rem'
       }
     }
   },

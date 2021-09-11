@@ -25,25 +25,25 @@ const EDU_HISTORY = [
 
 export default function Footer() {
   return (
-    <div className="h-full text-white flex w-full slide-in">
-      <section className="w-1/2 mb-6">
-        <h1 className="mb-6 text-yellow-100 uppercase">Education</h1>
+    <div className="h-full text-white flex w-full flex-wrap slide-in justify-between">
+      <section className="sm:w-1/2 mb-6">
+        <h1 className="mb-6 text-yellow-100 uppercase mt-12 sm:mt-0">Education</h1>
         {
           EDU_HISTORY.map((desc, index) => (
             <Experiences key={index} {...desc} />
           ))
         }
       </section>
-      <section className="w-1/2 mb-6 ml-52">
+      <section className="w-112 mb-6 text-center sm:text-left">
         <h1 className="text-yellow-100 mb-6 uppercase">Get In Touch</h1>
         <Contact type="phone" className={styles['contact-item']} />
         <Contact type="mail" className={styles['contact-item']} />
         <Contact type="website" className={styles['contact-item']} />
         <br />
-        <Contact type="twitter" className="inline-block mr-8 mt-6 hover:scale-110 transition" />
-        <Contact type="linkedin" className="inline-block mr-8 hover:scale-110 transition" />
-        <Contact type="stackoverflow" className="inline-block mr-8 hover:scale-110 transition" />
-        <Contact type="github" className="inline-block hover:scale-110 transition" />
+        <Contact type="twitter" className="inline-block mr-8 mt-6 mb-6 hover:scale-110 transition" />
+        <Contact type="linkedin" className="inline-block mr-8 mb-6 hover:scale-110 transition" />
+        <Contact type="github" className="inline-block mb-6 mr-8 hover:scale-110 transition" />
+        <Contact type="stackoverflow" className="inline-block mb-6 hover:scale-110 transition" />
       </section>
     </div>
   )

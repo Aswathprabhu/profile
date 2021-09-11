@@ -58,25 +58,25 @@ const SKILLS = [
   {
     type: 'CI/CD',
     values: ['Experience in maintaining CI/CD for a Monorepo', 'Wrote a custom deployment script']
-  },
-  {
-    type: 'Other Technical Skills',
-    values: ['Web Performance, Web Assembly, Web Workers and Service Worker and PWA' ]
   }
+  // {
+  //   type: 'Other Technical Skills',
+  //   values: ['Web Performance, Web Assembly, Web Workers and Service Worker and PWA' ]
+  // }
 ]
 
 export default function Main() {
   return (
-    <div className="h-full text-green-200 flex w-full slide-in">
-      <section className="w-1/2 mb-6">
-        <h1 className="mb-6 uppercase">Work Background</h1>
+    <div className="h-full text-green-200 flex w-full slide-in justify-between flex-wrap">
+      <section className="sm:w-1/2 mb-6">
+        <h1 className="mb-6 uppercase mt-12 sm:mt-0">Work Background</h1>
         {
           WORK_GROUNDS.map((desc, index) => (
             <Experiences key={index} {...desc} />
           ))
         }
       </section>
-      <section className="w-1/2 mb-6 ml-52">
+      <section className="w-112 mb-6">
         <h1 className="mb-6 uppercase">Skills</h1>
         {
           SKILLS.map(({ type, values }, index) => {

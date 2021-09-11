@@ -11,7 +11,7 @@ function Profile() {
     <main className="wrapper h-full slide-in">
       <article className="flex flex-col h-full leading-8 relative">
         <section className="bg-green-200">
-          <div className={`${styles['section-setup']} -mb-8`}>
+          <div className={styles['section-setup']}>
             <Header />
           </div>
         </section>
