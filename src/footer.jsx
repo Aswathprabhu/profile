@@ -23,7 +23,7 @@ const EDU_HISTORY = [
 
 export default function Footer() {
   return (
-    <div className="h-full text-white flex w-full">
+    <div className="h-full text-white flex w-full slide-in">
       <section className="w-1/2 mb-6">
         <h1 className="mb-6 text-yellow-100 uppercase">Education</h1>
         {

@@ -3,7 +3,7 @@ import ProfExp from './prof-exp';
 export default function Header() {
   return (
     <>
-      <section className="w-1/2 h-full text-white">
+      <section className="w-1/2 h-full text-white slide-in">
         <section className="mb-6 uppercase">
           <h1 className="text-yellow-100">Aswath Prabhu R</h1>
           <span className="font-bold">Software Developer</span>
@@ -31,7 +31,11 @@ export default function Header() {
         </section>
       </section>
       <aside className="w-1/2 flex justify-end h-full">
-        <img className="w-96 h-3/5 object-cover rounded-lg shadow-2xl" src="/profile.jpg" alt="Aswath Prabhu R" />
+        <img
+          className="w-96 h-3/5 object-cover rounded-lg shadow-2xl profile-img"
+          src="/profile.jpg"
+          alt="Aswath Prabhu R"
+        />
       </aside>
     </>
   );

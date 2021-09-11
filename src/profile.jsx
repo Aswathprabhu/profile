@@ -8,7 +8,7 @@ import './styles/index.css';
 
 function Profile() {
   return (
-    <main className="wrapper h-full">
+    <main className="wrapper h-full slide-in">
       <article className="flex flex-col h-full leading-8">
         <section className="bg-green-200">
           <div className={`${styles['section-setup']} -mb-8`}>
