@@ -21,12 +21,13 @@ const MEDIA_TYPES = {
     url: 'https://insanedev.netlify.app/'
   },
   stackoverflow: {
-    icon: StackOverflowIcon,
+    path: '/stackoverflow.png',
     url: 'https://stackoverflow.com/users/8175684/aswath'
   },
   twitter: {
     icon: TwitterIcon,
-    url: 'https://twitter.com/theInsaneDev'
+    url: 'https://twitter.com/theInsaneDev',
+    classes: 'h-10'
   },
   linkedin: {
     path: '/linkedin.png',
@@ -49,10 +50,10 @@ export default function Contact(props) {
         href={MEDIA_TYPE.url}
       >
         {MEDIA_TYPE.icon ? (
-          <MEDIA_TYPE.icon className="w-5 h-5 mr-2" />
+          <MEDIA_TYPE.icon className={MEDIA_TYPE.classes ? MEDIA_TYPE.classes : 'w-5 h-5 mr-2'} />
         ) : (
           <img
-            className="w-5 h-5 mr-2 shadow-2xl"
+            className="h-10"
             src={MEDIA_TYPE.path}
             alt={MEDIA_TYPE.path}
           />

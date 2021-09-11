@@ -11,9 +11,7 @@ const WORK_GROUNDS = [
       'Adopted a module based workflow, that removed all the duplication thereby increasing the clarity and made the code more predictable',
       'Maintaining a Design Language System built with Web Components',
       'Built UI components as Web Components to make them interoperable between various frameworks and libraries',
-      'Built various light weight widgets using Preact JS',
-      'Made critical pages light weight and rendered them within Iframes',
-      'Efficiently handled cross-origin communication between the parent and child apps via message events',
+      'Made critical pages light weight and rendered them as iframes and handled the cross-origin communication via message events',
       'Wrote various codemods and custom lint rules to enforce code styles',
       'Maintaining CI/CD for a Monorepo',
       'Built an API development tool that automatically syncs collection and saved hours of development for backend devs',
@@ -24,7 +22,9 @@ const WORK_GROUNDS = [
     place: 'Project Trainee, Zoho Corporation',
     timeline: 'June 2018 - May 2019',
     doings: [
-      'Got comfortable with Ember, a JavaScript based Client Framework',
+      'Got comfortable with the fundamentals of Web Development',
+      'Played with Ember JS',
+      'Started adding features to the products under Zoho Finance Suite',
       'Contributed to many internal tools that rapidly sped up the development workflow'
     ]
   }
