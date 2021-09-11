@@ -22,7 +22,8 @@ const MEDIA_TYPES = {
   },
   stackoverflow: {
     path: '/stackoverflow.png',
-    url: 'https://stackoverflow.com/users/8175684/aswath'
+    url: 'https://stackoverflow.com/users/8175684/aswath',
+    classes: 'h-10'
   },
   twitter: {
     icon: TwitterIcon,
@@ -31,7 +32,8 @@ const MEDIA_TYPES = {
   },
   linkedin: {
     path: '/linkedin.png',
-    url: 'https://www.linkedin.com/in/aswath-prabhu-359340132/'
+    url: 'https://www.linkedin.com/in/aswath-prabhu-359340132/',
+    classes: 'h-10'
   },
   github: {
     path: '/github.png',
