@@ -1,17 +1,20 @@
-const YEAR_JOINED = 2019;
-const MONTH_JOINED = 5;
+import differenceInYears from "date-fns/differenceInYears";
+import differenceInMonths from "date-fns/differenceInMonths";
+
+const START_DATE = new Date("2019-05-01");
 const TODAY_DATE = new Date();
-const CURRENT_YEAR = TODAY_DATE.getFullYear();
-const CURRENT_MONTH = TODAY_DATE.getMonth() + 1; // getMonth starts from 0.
 
 export default function ProfExp(attrs) {
-  let calculatedYears, calculatedMonths;
-  calculatedMonths = Math.abs(CURRENT_MONTH - MONTH_JOINED);
-  if (CURRENT_MONTH > MONTH_JOINED) {
-    calculatedYears = CURRENT_YEAR - YEAR_JOINED;
+  const calculatedYears = differenceInYears(TODAY_DATE, START_DATE);
+  let calculatedMonths = differenceInMonths(TODAY_DATE, START_DATE);
+  calculatedMonths = calculatedMonths % 12;
+  if (!!calculatedMonths) {
+    return (
+      <span
+        {...attrs}
+      >{`${calculatedYears} Years ${calculatedMonths} Months`}</span>
+    );
   } else {
-    calculatedYears = CURRENT_MONTH - 1 - YEAR_JOINED;
-    calculatedMonths = 12 - calculatedMonths;
+    return <span {...attrs}>{`${calculatedYears} Years`}</span>;
   }
-  return <span {...attrs}>{`${calculatedYears} Years ${calculatedMonths} Months`}</span>;
 }
