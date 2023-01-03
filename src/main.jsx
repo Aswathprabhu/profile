@@ -24,6 +24,8 @@ const WORK_GROUNDS = [
       "Got a chance to build a DLS. Built it with web components and made it framework agnostic",
       "Concentrated a lot on performance. Made critical modules light weight and rendered them as iframes",
       "Had a good experience maintaining CI/CD for a monorepo",
+      "Wrote various codemods and custom lint rules to enforce code styles",
+      "Built an API development tool that automatically syncs API collection and saved hours of development for backend devs",
     ],
   },
   {
